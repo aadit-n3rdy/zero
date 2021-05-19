@@ -1,0 +1,3 @@
+[submodule "eaux"]
+	path = eaux
+	url = https://github.com/aadit-n3rdy/eaux

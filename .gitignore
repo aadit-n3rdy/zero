@@ -1,0 +1,7 @@
+eaux/**
+compile_commands.json
+.clangd/**.*
+**.o
+zero
+test
+

@@ -1,98 +1,80 @@
 [
-  {
-    "arguments": [
-      "/usr/bin/clang-10",
-      "-c",
-      "-Wall",
-      "-I/usr/include/SDL2",
-      "-I/usr/include/directfb",
-      "-D_REENTRANT",
-      "-D_REENTRANT",
-      "-I./eaux/src",
-      "-I./eaux/mosaic/src",
-      "src/main.c",
-      "-o",
-      "zero",
-      "-pthread",
-      "-pthread"
-    ],
-    "directory": "/home/n3rdy/dev/c/zero",
-    "file": "/home/n3rdy/dev/c/zero/src/main.c",
-    "output": "/home/n3rdy/dev/c/zero/src/main.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/clang-10",
-      "-c",
-      "-Wall",
-      "-I/usr/include/SDL2",
-      "-I/usr/include/directfb",
-      "-D_REENTRANT",
-      "-D_REENTRANT",
-      "-I./eaux/src",
-      "-I./eaux/mosaic/src",
-      "src/organism.c",
-      "-o",
-      "zero",
-      "-pthread",
-      "-pthread"
-    ],
-    "directory": "/home/n3rdy/dev/c/zero",
-    "file": "/home/n3rdy/dev/c/zero/src/organism.c",
-    "output": "/home/n3rdy/dev/c/zero/src/organism.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-Wall",
-      "-I./mosaic/src",
-      "src/test.c",
-      "-o",
-      "test"
-    ],
-    "directory": "/home/n3rdy/dev/c/zero/eaux",
-    "file": "/home/n3rdy/dev/c/zero/eaux/src/test.c",
-    "output": "/home/n3rdy/dev/c/zero/eaux/src/test.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-Wall",
-      "-I./mosaic/src",
-      "-c",
-      "src/eaux.c",
-      "-o",
-      "eaux.o"
-    ],
-    "directory": "/home/n3rdy/dev/c/zero/eaux",
-    "file": "/home/n3rdy/dev/c/zero/eaux/src/eaux.c",
-    "output": "/home/n3rdy/dev/c/zero/eaux/eaux.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-Wall",
-      "-c",
-      "-o",
-      "mosaic.o",
-      "src/mosaic.c"
-    ],
-    "directory": "/home/n3rdy/dev/c/zero/eaux/mosaic",
-    "file": "/home/n3rdy/dev/c/zero/eaux/mosaic/src/mosaic.c",
-    "output": "/home/n3rdy/dev/c/zero/eaux/mosaic/mosaic.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-Wall",
-      "-o",
-      "test",
-      "src/test.c"
-    ],
-    "directory": "/home/n3rdy/dev/c/zero/eaux/mosaic",
-    "file": "/home/n3rdy/dev/c/zero/eaux/mosaic/src/test.c",
-    "output": "/home/n3rdy/dev/c/zero/eaux/mosaic/src/test.o"
-  }
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-I./eaux/src",
+            "-I./eaux/mosaic/src",
+            "-o",
+            "zero",
+            "src/organism.c"
+        ],
+        "directory": "/home/n3rdy/zero",
+        "file": "src/organism.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-I./eaux/src",
+            "-I./eaux/mosaic/src",
+            "-o",
+            "zero",
+            "src/main.c"
+        ],
+        "directory": "/home/n3rdy/zero",
+        "file": "src/main.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-o",
+            "test",
+            "src/test.c"
+        ],
+        "directory": "/home/n3rdy/zero/eaux/mosaic",
+        "file": "src/test.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-I./mosaic/src",
+            "-o",
+            "eaux.o",
+            "src/eaux.c"
+        ],
+        "directory": "/home/n3rdy/zero/eaux",
+        "file": "src/eaux.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-o",
+            "mosaic.o",
+            "src/mosaic.c"
+        ],
+        "directory": "/home/n3rdy/zero/eaux/mosaic",
+        "file": "src/mosaic.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-I./mosaic/src",
+            "-o",
+            "test",
+            "src/test.c"
+        ],
+        "directory": "/home/n3rdy/zero/eaux",
+        "file": "src/test.c"
+    }
 ]

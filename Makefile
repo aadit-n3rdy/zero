@@ -1,19 +1,18 @@
 CC:=clang
-CFLAGS:=-Wall $(shell sdl2-config --cflags)
+CFLAGS:=-Wall
 .PHONY:=all clean eaux
 INCLUDE_EAUX:=./eaux/src
 INCLUDE_MOSAIC:=./eaux/mosaic/src
-LINK_DIRS:=-L./eaux 
-LINK:=-leaux -lm
+LINK_DIRS:=-L./eaux -L./eaux/mosaic
+LINK:=-leaux -lmosaic -lm -lxcb
 SRC:=$(wildcard src/*.c)
 HEADERS:=$(wildcard src/*.h)
-SDL2_STATIC_LIBS:=$(shell sdl2-config --static-libs)
 
 
 all: zero test eaux/libeaux.a
 
 zero: ${SRC} ${HEADERS} eaux/libeaux.a
-	${CC} ${CFLAGS} -I${INCLUDE_EAUX} -I${INCLUDE_MOSAIC} ${SRC} -o zero ${LINK_DIRS} ${LINK} ${SDL2_STATIC_LIBS}
+	${CC} ${CFLAGS} -I${INCLUDE_EAUX} -I${INCLUDE_MOSAIC} ${SRC} -o zero ${LINK_DIRS} ${LINK} 
 
 eaux/libeaux.a:
 	$(MAKE) -C eaux/

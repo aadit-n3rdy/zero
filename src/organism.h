@@ -30,13 +30,4 @@ struct zero_organism {
  * rotate left/right
  */
 
-int zero_organism_init(struct zero_organism *organism,
-		float pos_x, 
-		float pos_y);
-
-int zero_organism_update(struct zero_organism *organism,
-		struct zero_world *world);
-
-int zero_organism_free(struct zero_organism *organism);
-
 #endif

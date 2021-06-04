@@ -4,3 +4,6 @@
 [submodule "tinygl"]
 	path = tinygl
 	url = https://github.com/C-Chads/tinygl
+[submodule "quo"]
+	path = quo
+	url = https://github.com/georgelam6/quo
